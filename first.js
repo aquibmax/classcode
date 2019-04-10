@@ -48,5 +48,3 @@
 // }
 // console.log(prime(4))
 
-
-console.log(__filename)
