@@ -17,19 +17,19 @@
 
 
 
-// var a = 'hi this is the input'
-// var b = a.split(' ')
+var a = process.argv[2]
+var b = a.split(' ')
 
-// array =[];
-// function abc(){
-//     for(i = 0; i<b.length; i++){
-//      var c = b[i].charAt(0).toUpperCase() + b[i].slice(1)
-//      array.push(c)
-//      var d = array.join(' ')
+array =[];
+function abc(){
+    for(i = 0; i<b.length; i++){
+     var c = b[i].charAt(0).toUpperCase() + b[i].slice(1)
+     array.push(c)
+     var d = array.join(' ')
     
-// }
-// return d
-// }
-// console.log(abc())
+}
+return d
+}
+console.log(abc())
 
 
