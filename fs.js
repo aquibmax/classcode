@@ -26,21 +26,17 @@
 
 
 const fs = require('fs')
+arr = []
 
-number = 0;
-a = []
-
-for (i = 0; i <= 999; i++) {
-    var num = Math.random() * 999;
-    v = Math.round(num)
-    number+= ' ' + v
-    a.push(number)
+for (i = 0; i <= 20; i++) {
+    var num = Math.floor(Math.random() * 100000);
+    arr.push(num)
 }
-console.log(a)
+console.log(arr)
 
-// fs.appendFile('./RandomNumber', number, (err, res) => {
-//     if (err) {
-//         console.log(err);
-//     }
-// })
+fs.appendFile('./randomNum', arr, (err, data) => {
+    if (err) {
+        console.log(err);
+    }
+})
 
