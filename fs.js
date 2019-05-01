@@ -28,9 +28,9 @@
 const fs = require('fs')
 arr = []
 
-for (i = 0; i <= 20; i++) {
-    var num = Math.floor(Math.random() * 100000);
-    arr.push(num)
+for (i = 0; i <= 1000; i++) {
+    var num = Math.floor(Math.random() * 100);
+    arr.push(num.toString())
 }
 console.log(arr)
 
